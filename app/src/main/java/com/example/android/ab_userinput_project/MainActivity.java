@@ -43,27 +43,27 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswer(View view) {
 
-        int calification=0;
+        int score = 0;
         int radioButtonAnsweredId = radioGroup.getCheckedRadioButtonId();
         RadioButton checkedButton = radioGroup.findViewById(radioButtonAnsweredId);
 
         if (checkedButton.getId() == radioButtonOne.getId()) {
-            calification++;
+            score++;
         }
 
-        if (checkBoxOne.isChecked() == true && checkBoxTwo.isChecked() == true) {
-            calification++;
+        if (checkBoxOne.isChecked() == true && checkBoxTwo.isChecked() == true && checkBoxThree.isChecked() == false) {
+            score++;
         }
 
         if (numberPicker.getValue() == 8) {
-            calification++;
+            score++;
         }
 
-        String etAnswer=editTextAnswer.getText().toString();
+        String etAnswer = editTextAnswer.getText().toString();
         if (etAnswer.equals("wilson")) {
-            calification++;
+            score++;
         }
-        Log.i("MainActivity", "submitAnswer: "+ calification+" of 4 answers correct!");
+        Log.i("MainActivity", "submitAnswer: " + score + " of 4 answers correct!");
 
     }
 
