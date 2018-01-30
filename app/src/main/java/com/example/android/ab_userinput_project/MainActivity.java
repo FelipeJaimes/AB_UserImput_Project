@@ -44,13 +44,17 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswer(View view) {
 
         int score = 0;
-        int radioButtonAnsweredId = radioGroup.getCheckedRadioButtonId();
-        RadioButton checkedButton = radioGroup.findViewById(radioButtonAnsweredId);
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
 
-        if (checkedButton.getId() == radioButtonOne.getId()) {
-            score++;
+        } else {
+            int radioButtonAnsweredId = radioGroup.getCheckedRadioButtonId();
+            RadioButton checkedButton = radioGroup.findViewById(radioButtonAnsweredId);
+
+            if (checkedButton.getId() == radioButtonOne.getId()) {
+                score++;
+            }
         }
-
+        
         if (checkBoxOne.isChecked() == true && checkBoxTwo.isChecked() == true && checkBoxThree.isChecked() == false) {
             score++;
         }
