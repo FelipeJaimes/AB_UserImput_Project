@@ -1,3 +1,20 @@
-<resources>
-    <string name="app_name">AB_UserInput_Project</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quiz Time!</string>
+    <string name="etname">Name</string>
+    <string name="question1">Who House in love with?</string>
+    <string name="answer11" translatable="false">Cuddy</string>
+    <string name="answer12" translatable="false">Cameron</string>
+    <string name="answer13">Thirteen</string>
+    <string name="question2">Two members of House\'s team?</string>
+    <string name="answer21" translatable="false">Foreman</string>
+    <string name="answer22" translatable="false">Chase</string>
+    <string name="answer23" translatable="false">Wilson</string>
+    <string name="question3">How many seasons House md series have?</string>
+    <string name="question4">Who is House best friend?</string>
+    <string name="etanswer">Answer</string>
+    <string name="completeButton">Complete</string>
+
+    <string name="toastError">Please fill the name field.</string>
+    <string name="toastComplete"><xliff:g id="name" example="Amy">%s</xliff:g> you have <xliff:g id="score" example="2">%s</xliff:g> of 4 answers correct!</string>
+
 </resources>

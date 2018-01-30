@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quiz Time!</string>
+    <string name="etname">Nombre</string>
+    <string name="question1">De quien esta enamorado House?</string>
+    <string name="question2">Dos miembros del equipo de House?</string>
+    <string name="answer13">Trece</string>
+    <string name="question3">Cuantas temporadas tiene la serie de House md?</string>
+    <string name="question4">Quien es el mejor amigo de House?</string>
+    <string name="etanswer">Respuesta</string>
+    <string name="completeButton">Completar</string>
+
+    <string name="toastError">Porfavor completa el campo del nombre.</string>
+    <string name="toastComplete"><xliff:g id="name" example="Amy">%s</xliff:g> tu tienes <xliff:g id="score" example="2">%s</xliff:g> de 4 respuestas correctas!</string>
+
+
+</resources>
